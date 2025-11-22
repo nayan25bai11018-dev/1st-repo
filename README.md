@@ -25,6 +25,7 @@ def add_data():
     c = input()
 
     # Need to make sure amount is a number
+   
     try:
         print("Amount: ", end="")
         a = float(input())
@@ -36,6 +37,7 @@ def add_data():
     n = input()
 
     # Append to CSV
+   
     with open(FILENAME, "a", newline="") as f:
         wr = csv.writer(f)
         wr.writerow([d, c, a, n])
